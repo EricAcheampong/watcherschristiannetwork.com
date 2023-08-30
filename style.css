@@ -1,0 +1,742 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+body{
+    background-image: url(cowboy-going-old-western-town.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    width: 100%;
+}
+.intro{
+    width: 45%;
+    display: grid;
+}
+.social-links{
+    margin-top: 100px;
+    width: 100%;
+    
+}
+.social-links a{
+    margin-left: 50px;
+    transition: 0.5s;
+    color: white;
+}
+.social-links a img:hover{
+   background: rgba(255, 255, 0, 0.577);
+   border-radius: 50%;
+}
+.social-links a img{
+    width: 30px;
+    transition: 0.2s;
+}
+.intro span{
+    text-align: center;
+    border-bottom: solid 3px yellow;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    margin-bottom: 0;
+}
+.intro p{
+    text-align: center;
+    margin-bottom: 10%;
+}
+.announcement{
+    font-size: 17px;
+    text-align: center;
+}
+.intro h1{
+    font-size: 60px;
+    text-align: center;
+    
+}
+
+.container{
+    border: solid white 2px;
+    width: 19%;
+    backdrop-filter: blur(4px);
+    height: 63vh;
+    margin-top: 5%;
+    border-radius: 9px;
+}
+.form-box{
+    width: 100%;
+    text-align: center;
+}
+.form-box h2{
+    letter-spacing: 3px;
+}
+
+.input-box{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    margin-left: 10%;
+
+}
+.input-box img{
+    position: absolute;
+    width: 25px;
+    right: 0;
+    margin-right: 10%;
+}
+.input-box input{
+    color: white;
+    border: none;
+    font-size: 17px;
+    width: 90%;
+    border-bottom: solid white 3px;
+    height: 40px;
+    margin-top: 10px;
+    background: transparent;
+    outline: none;
+    
+}
+
+::placeholder{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.regions{
+    margin: 15px 10% 0 10%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.regions span{
+    font-size: 15px;
+}
+.regions select{
+    background: transparent;
+    color: white;   
+}
+#option{
+    background: #000;
+}
+
+#register input{
+    background: yellow;
+    border: none;
+    padding: 9px 25px;
+    font-weight: bold;
+    border-radius: 30px;
+    font-size: large;
+    transition: 0.5s;
+}
+#register input:hover{
+    padding: 9px 30px;
+}
+#register{
+    margin-top: 23px;
+    padding-bottom: 9px;
+}
+.login{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    bottom: 0;
+}
+.login a{
+    color: white;
+    text-decoration: underline;   
+}
+
+#location{
+    background: transparent;
+    margin-top: 26px;
+    width: 80%;
+    outline: none;
+    color: white;
+    border: solid white 1px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1600px){
+    .container{
+        width: 45%;
+    }
+
+
+    .social-links{
+        margin-top: 100px;
+        width: 110%;
+        
+    }
+    .social-links a{
+        font-size: 20px;
+    }
+    .social-links a img{
+        width: 20px;
+        transition: 0.2s;
+    }
+    .regions span{
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 1390px){
+    .container{
+        width: 45%;
+    }
+    .social-links a{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1180px){
+    .container{
+        width: 40%;
+    }
+    .social-links a{
+        font-size: 15px;
+    }
+    .social-links{
+        margin-top: 50px;
+        width: 150%;
+        
+    }
+}
+@media (max-width: 1120px){
+    .container{
+        width: 35%;
+    }
+    .social-links a{
+        font-size: 15px;
+    }
+    .social-links{
+        margin-top: 50px;
+        width: 200%;
+        
+    }
+}
+
+
+@media (max-width: 900px){
+    .container{
+        width: 35%;
+    }
+    .social-links a{
+        font-size: 15px;
+    }
+    .social-links{
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    body{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .intro{
+        margin-right: 30%;
+    }
+}
+@media (max-width: 750px){
+    .container{
+        width: 60%;
+    }
+    .regions span{
+        font-size: 14px;
+    }
+    .social-links a{
+        font-size: 15px;
+    }
+    .social-links{
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    body{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .intro{
+        margin-right: 40%;
+    }
+}
+
+
+@media (max-width: 680px){
+    .container{
+        width: 60%;
+    }
+    .regions span{
+        font-size: 14px;
+    }
+    .social-links a{
+        font-size: 15px;
+    }
+    .social-links{
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    body{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .intro{
+        margin-right: 40%;
+    }
+}
+
+@media (max-width: 650px){
+    .container{
+        width: 60%;
+    }
+    .regions{
+        flex-direction: column;
+    }
+    .regions select{
+        display: none;
+    }
+    .regions span{
+        font-size: 20px;
+        display: none;
+    }
+    .social-links a{
+        font-size: 15px;
+    }
+    .social-links{
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    body{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .intro{
+        margin-right: 50%;
+    }
+
+    #location{
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 550px){
+    .container{
+        width: 60%;
+    }
+    .regions{
+        flex-direction: column;
+    }
+    .regions select{
+        display: none;
+    }
+    .regions span{
+        font-size: 20px;
+        display: none;
+    }
+    .social-links a{
+        font-size: 15px;
+    }
+    .social-links{
+        width: 100%;
+        display: flex;
+        overflow-x: auto;
+        
+        justify-content: space-evenly;
+        
+    }
+    body{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .intro{
+        margin-right: 50%;
+    }
+
+    #location{
+        margin-top: 0;
+    }
+}
+@media (max-width:330px) {
+    .container{
+        width: 100px;
+    }
+    .intro{
+        margin-right: 50%;
+    }
+    .intro h1{
+        width: 20%;
+        margin-left: 10%;
+        font-size: 35px;
+    }
+    .intro span{
+       width: 80%;
+       font-size: 25px;
+       margin-left: 20px;
+    }
+
+    
+}
+@media (max-width:400px) {
+    .container{
+        width: 90%;
+    }
+    .intro{
+        margin-right: 50%;
+    }
+    .intro h1{
+        width: 35%;
+        margin-left: 10%;
+        font-size: 50px;
+    }
+    .intro span{
+       width: 80%;
+       font-size: 25px;
+       margin-left: 20px;
+    }
+
+    
+}
+@media (max-width: 650px){
+    .container{
+        width: 60%;
+    }
+    .regions{
+        flex-direction: column;
+    }
+    .regions select{
+        display: none;
+    }
+    .regions span{
+        font-size: 20px;
+        display: none;
+    }
+    .social-links a{
+        font-size: 15px;
+    }
+    .social-links{
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    body{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .intro{
+        margin-right: 70%;
+        width: 30%;
+    }
+    .intro p{
+        font-size: 15px;
+        width: 80%;
+        margin-left: 20px;
+    }
+
+    #location{
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 297px){
+    .intro{
+     margin-left: 0;
+    }
+    .intro h1{
+        font-size: 35px;
+        margin-left: 0;
+    }
+    .announcement{
+        margin-left: -100px;
+    }
+    .container{
+        width: 80%;
+        margin-left: 40px;
+    }
+    .regions{
+        flex-direction: column;
+    }
+    .regions select{
+        display: none;
+    }
+    .regions span{
+        font-size: 20px;
+        display: none;
+    }
+    .social-links a img{
+        width: 15px;
+    }
+    .social-links a{
+        font-size: 8px;
+    }
+    .social-links{
+        width: 100%;
+        display: flex;
+        overflow-x: auto;
+        
+        justify-content: space-evenly;
+        
+    }
+    body{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .intro{
+        margin-right: 50%;
+    }
+
+    #location{
+        margin-top: 0;
+    }
+}
+
+
+@media (max-width: 250px){
+    .intro{
+        font-size: 50px;
+    }
+    .intro p{
+        font-size: 15px;
+    }
+    .container{
+        width: 120%;
+        margin-left: 105px;
+    }
+    .regions{
+        flex-direction: column;
+    }
+    .regions select{
+        display: none;
+    }
+    .regions span{
+        font-size: 20px;
+        display: none;
+    }
+    .social-links a{
+        font-size: 15px;
+    }
+    .social-links{
+        width: 100%;
+        display: flex;
+        overflow-x: auto;
+        
+        justify-content: space-evenly;
+        
+    }
+    body{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .intro{
+        margin-right: 50%;
+    }
+
+    #location{
+        margin-top: 0;
+    }
+}
+
+
+@media (max-height: 900px){
+    .container{
+        height: 35%;
+        width: 100%;
+        margin-left: 80px;
+
+    }
+@media (max-height: 730px){
+    .container{
+        height: 35%;
+        width: 100%;
+        margin-left: 80px;
+
+    }
+    body{
+        height: 250vh;
+    }
+}
+@media (max-height: 700px){
+    .container{
+        height: 35%;
+        width: 100%;
+        margin-left: 80px;
+
+    }
+    body{
+        height: 260vh;
+    }
+}
+@media (max-height: 650px){
+    .container{
+        height: 34%;
+        width: 100%;
+        margin-left: 80px;
+
+    }
+    body{
+        height: 270vh;
+    }
+}
+
+@media (max-height: 630px){
+    .container{
+        height: 35%;
+        width: 100%;
+        margin-left: 80px;
+
+    }
+    body{
+        height: 270vh;
+    }
+}
+
+@media (max-height: 590px){
+    .container{
+        height: 35%;
+        width: 100%;
+        margin-left: 80px;
+
+    }
+    body{
+        height: 290vh;
+    }
+}
+@media (max-height: 550px){
+    .container{
+        height: 38%;
+        width: 100%;
+        margin-left: 80px;
+
+    }
+    body{
+        height: 320vh;
+    }
+}
+@media (max-height: 500px){
+    .container{
+        height: 38%;
+        width: 100%;
+        margin-left: 80px;
+
+    }
+    body{
+        height: 320vh;
+    }
+}
+@media (max-height: 490px){
+    .container{
+        height: 140%;
+        width: 100%;
+        margin-left: 80px;
+
+    }
+    body{
+        height: 330vh;
+    }
+}
+@media (max-height: 475px){
+    .container{
+        height: 140%;
+        width: 100%;
+        margin-left: 80px;
+
+    }
+    body{
+        height: 350vh;
+    }
+}
+@media (max-height: 450px){
+    .container{
+        height: 140%;
+        width: 100%;
+        margin-left: 80px;
+
+    }
+    body{
+        height: 360vh;
+    }
+}
+
+@media (max-height: 440px){
+    .container{
+        height: 140%;
+        width: 100%;
+        margin-left: 80px;
+
+    }
+    body{
+        height: 370vh;
+    }
+}
+@media (max-height: 400px){
+    .container{
+        height: 140%;
+        width: 100%;
+        margin-left: 80px;
+
+    }
+    body{
+        height: 400vh;
+    }
+}
+@media (max-height: 390px){
+    .container{
+        height: 140%;
+        width: 100%;
+        margin-left: 80px;
+
+    }
+    body{
+        height: 420vh;
+    }
+}
+@media (max-height: 370px){
+    .container{
+        height: 140%;
+        width: 100%;
+        margin-left: 80px;
+
+    }
+    body{
+        height: 440vh;
+    }
+}

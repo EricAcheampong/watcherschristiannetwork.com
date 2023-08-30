@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="intro">
+        <h1>Watchers Chrisatian Network</h1>
+        <p>We are called to watch!!!!!!!</p>
+        <span>Upcoming!!!!!</span>
+        <p class="announcement">Hello!!!!
+            We are thrilled to invite you to our upcoming special Church Program, dubbed ""
+            Date: 00/12/2002.
+            Venue: Atwea Mountains.
+            Join us for week filled with inspiring worship, insightful teachings, and heartwarming fellowship.
+            Prayer and Reflection: Conclude the event with a moment of collective prayer, reflecting on the blessings we have received and seeking guidance for the future.
+            This program is open to everyone, so feel free to invite your friends, family, and neighbors to join us for this memorable day. Let's come together as one congregation to celebrate our faith, embrace togetherness, and grow in our spiritual journey.
+            Mark your calendars and spread the word! We look forward to sharing this meaningful experience with all of you.
+            God bless you!!!!!
+        </p>
+             <div class="social-links">
+                <a href=""><img src="icons/facebook-logo-24.png" alt="">facebook</a>
+             <a href=""><img src="icons/whatsapp-white (2).png" alt="">Whatsapp</a>
+             <a href=""><img src="icons/instagram-white (1).png" alt="">Instagram</a>
+             <a href=""><img src="icons/email-white (2).png" alt="">Email us</a>
+             <a href=""><img src="icons/phone-white (3).png" alt="">Contact</a>
+
+             </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="container">
+            <form name="Formfill" class="form-box" onsubmit="return validation()">
+                <h2>Register</h2>
+                <p id="hint"></p>
+                <div class="input-box">
+                    <input type="text" id="Firstname" placeholder="First name" >
+                    <img src="icons8-user-30.png" alt="">
+                </div>
+                <div class="input-box">
+                    <input type="text" id="Surname" placeholder="Surname" >
+                    <img src="icons8-user-30.png" alt="">
+                </div>
+                <div class="input-box">
+                    <input type="email" id="Email" placeholder="Email" >
+                    <img src="icons8-email-30.png" alt="">
+                </div>
+                <div class="input-box">
+                    <input type="password" id="Password" placeholder="Password" >
+                    <img src="icons8-password-50.png" alt="">
+                </div>
+                <div class="input-box">
+                    <input type="password" id="Cpassword" placeholder="Confirm password" >
+                    <img src="icons8-password-50.png" alt="">
+                </div>
+                <div class="input-box">
+                    <input type="tel" id="phone" placeholder="Mobile">
+                    <img src="phone-white (2).png" alt="">
+                </div>    
+
+                <div class="regions">
+                    <span>please select region</span>
+                    <select id="choose">  
+                        <option id="option"></option>
+                        <option id="option">Central Region</option>
+                        <option id="option">Ashanti Region</option>
+                        <option id="option">Eastern Region</option>
+                        <option id="option">Savannah Region</option>
+                        <option id="option">Brong Ahafo Region</option>
+                        <option id="option">Upper East Region</option>
+                        <option id="option">Western Region</option>
+                        <option id="option">Northern Region</option>
+                        <option id="option">Western North Region</option>
+                        <option id="option">Bono East Region</option>
+                        <option id="option">Upper West Region</option>
+                        <option id="option">Greater Accra Region</option>
+                        <option id="option">North East Region</option>
+                        <option id="option">oti Region</option>
+                        <option id="option">Volta Region</option>
+                        <option id="option">Other</option>
+                        
+                    </select>
+                </div>
+                <textarea  id="location" placeholder="please type your location"></textarea>
+                <center> <div id="register">
+                    <input type="submit" value="Register" class="reg-btn">
+                </div>
+                </center>
+                <div class="login">
+                    <a href="">Log in</a>
+                    <a href="">Forgot Pasword?</a>
+                </div>
+               
+                
+
+            </form>
+    </div>
+
+
+
+
+
+<script>
+    document.getElementById("hint").innerHTML="*Please fill this form to register";
+  function validation(){
+    //first name
+    if(document.getElementById("Firstname").value==""){
+        document.getElementById("hint").innerHTML="*Please enter your first name";
+        document.getElementById("hint").style.color="red";
+        document.getElementById("hint").style.fontWeight="bold";
+        return false;
+    }
+       //surname
+       else if(document.getElementById("Surname").value==""){
+        document.getElementById("hint").innerHTML="*Please enter your surname";
+        document.getElementById("hint").style.color="red";
+        document.getElementById("hint").style.fontWeight="bold";
+        return false;
+    }
+    //email
+    else if(document.getElementById("Email").value==""){
+        document.getElementById("hint").innerHTML="*Please enter your email address";
+        document.getElementById("hint").style.color="red";
+        document.getElementById("hint").style.fontWeight="bold";
+        return false;
+    }//password
+    else if(document.getElementById("Password").value==""){
+        document.getElementById("hint").innerHTML="*Please enter your password";
+        document.getElementById("hint").style.color="red";
+        document.getElementById("hint").style.fontWeight="bold";
+        return false;
+    }
+    //password limit
+    else if(document.getElementById("Password").value.length<6){
+        document.getElementById("hint").innerHTML="*Please your password must be at least 6 characters";
+        document.getElementById("hint").style.color="red";
+        document.getElementById("hint").style.fontWeight="bold";
+        return false;
+    }//confirm password
+    else if(document.getElementById("Cpassword").value==""){
+        document.getElementById("hint").innerHTML="*Please confirm your password";
+        document.getElementById("hint").style.color="red";
+        document.getElementById("hint").style.fontWeight="bold";
+        return false;
+    }//passwords match
+    else if(document.getElementById("Cpassword").value!==document.getElementById("Password").value){
+        document.getElementById("hint").innerHTML="*Please your passwords don't match";
+        document.getElementById("hint").style.color="red";
+        document.getElementById("hint").style.fontWeight="bold";
+        return false;
+    }//contact
+    else if(document.getElementById("phone").value==""){
+        document.getElementById("hint").innerHTML="*Please your phone number";
+        document.getElementById("hint").style.color="red";
+        document.getElementById("hint").style.fontWeight="bold";
+        return false;
+    }//choose location
+    else if(document.getElementById("choose").value==""){
+        document.getElementById("hint").innerHTML="*Please choose your region";
+        document.getElementById("hint").style.color="red";
+        document.getElementById("hint").style.fontWeight="bold";
+        return false;
+    }
+    else if(document.getElementById("choose").value=="Other"){
+        document.getElementById("hint").innerHTML="*Please type your location";
+        document.getElementById("hint").style.color="red";
+        document.getElementById("hint").style.fontWeight="bold";
+        return false;
+    }
+    
+    
+    
+  }
+
+</script>
+</body>
+</html>
